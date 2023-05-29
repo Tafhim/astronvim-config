@@ -20,6 +20,8 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    -- execute current line in bash and paste output to next line
+    ["<leader>E"] = { "yyp:.!zsh<Enter><cr>", desc = "Execute the current line in Zsh and paste output below" },
   },
   t = {
     -- setting a mapping to false will disable it
